@@ -68,7 +68,7 @@ AppDir:
   test:
     debian:
       image: appimagecrafters/tests-env:debian-stable
-      command: "./AppRun"
+      command: "dbus-run-session ./AppRun"
       use_host_x: True
     centos:
       image: appimagecrafters/tests-env:centos-7
@@ -76,15 +76,15 @@ AppDir:
       use_host_x: True
     arch:
       image: appimagecrafters/tests-env:archlinux-latest
-      command: "./AppRun"
+      command: "dbus-run-session ./AppRun"
       use_host_x: True
     fedora:
       image: appimagecrafters/tests-env:fedora-30
-      command: "./AppRun"
+      command: "dbus-run-session ./AppRun"
       use_host_x: True
     ubuntu:
       image: appimagecrafters/tests-env:ubuntu-xenial
-      command: "./AppRun"
+      command: "dbus-run-session ./AppRun"
       use_host_x: True
   
   
