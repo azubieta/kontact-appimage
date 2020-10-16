@@ -91,6 +91,6 @@ AppDir:
 
 
 AppImage:
-  update-information: None
+  update-information: gh-releases-zsync|azubieta|kontact-appimage|latest|kontact-*x86_64.AppImage.zsync
   sign-key: None
   arch: x86_64
