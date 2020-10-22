@@ -40,10 +40,15 @@ AppDir:
       - kdepim-addons
       - akonadiconsole
       - akonadi-backend-sqlite
+      - libkf5service-bin
       - akonadi-import-wizard
       - libpulse0
       - libfreetype6
       - libfontconfig1
+
+      - libassuan0
+      - libksba8
+      - libsqlite3-0
     exclude:
       - phonon4qt5
 
@@ -61,6 +66,7 @@ AppDir:
       QTWEBENGINE_DISABLE_SANDBOX: 1
       QT_PLUGIN_PATH: $APPDIR/usr/lib/x86_64-linux-gnu
     path_mappings:
+      - /etc/xdg/kmail:$APPDIR/etc/xdg/kmail
       - /usr/lib/x86_64-linux-gnu/libexec:$APPDIR/usr/lib/x86_64-linux-gnu/libexec/
       - /usr/lib/x86_64-linux-gnu/sasl2:$APPDIR/usr/lib/x86_64-linux-gnu/sasl2
       
